@@ -111,16 +111,16 @@ $(function(){ initResizable(false); });
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  Serial.begin(115200);</div>
 <div class="line">  Serial.println(F(<span class="stringliteral">&quot;setup&quot;</span>));</div>
-<div class="line">  Serial.println(String(F(<span class="stringliteral">&quot;i2c device lib version: &quot;</span>)) + em::I2cDualMotor::Version());</div>
+<div class="line">  Serial.println(String(F(<span class="stringliteral">&quot;i2c dual motor lib version: &quot;</span>)) + em::I2cDualMotor::Version());</div>
 <div class="line"> </div>
 <div class="line">  Wire.begin();</div>
 <div class="line"> </div>
 <div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> ret = g_i2c_dual_motor.Init();</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (<a id="a1" name="a1"></a><a class="code hl_enumvalue" href="classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4ad30422763391c2e10c0a1315689f6cfe">em::I2cDualMotor::kOK</a> == ret) {</div>
-<div class="line">    Serial.println(F(<span class="stringliteral">&quot;i2c device initialization successful&quot;</span>));</div>
+<div class="line">    Serial.println(F(<span class="stringliteral">&quot;i2c dual motor initialization successful&quot;</span>));</div>
 <div class="line">  } <span class="keywordflow">else</span> {</div>
-<div class="line">    Serial.print(F(<span class="stringliteral">&quot;i2c device initialization failed: &quot;</span>));</div>
+<div class="line">    Serial.print(F(<span class="stringliteral">&quot;i2c dual motor initialization failed: &quot;</span>));</div>
 <div class="line">    Serial.println(ret);</div>
 <div class="line">    INFINITE_LOOP_ON_FAILURE;</div>
 <div class="line">  }</div>

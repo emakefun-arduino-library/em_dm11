@@ -22,16 +22,16 @@ void InfiniteLoopOnFailure(const char* function, const uint32_t line_number) {
 void setup() {
   Serial.begin(115200);
   Serial.println(F("setup"));
-  Serial.println(String(F("i2c device lib version: ")) + em::I2cDualMotor::Version());
+  Serial.println(String(F("i2c dual motor lib version: ")) + em::I2cDualMotor::Version());
 
   Wire.begin();
 
   const auto ret = g_i2c_dual_motor.Init();
 
   if (em::I2cDualMotor::kOK == ret) {
-    Serial.println(F("i2c device initialization successful"));
+    Serial.println(F("i2c dual motor initialization successful"));
   } else {
-    Serial.print(F("i2c device initialization failed: "));
+    Serial.print(F("i2c dual motor initialization failed: "));
     Serial.println(ret);
     INFINITE_LOOP_ON_FAILURE;
   }
