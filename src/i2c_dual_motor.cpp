@@ -25,7 +25,7 @@ I2cDualMotor::ErrorCode I2cDualMotor::Init(const uint32_t frequency) {
   return static_cast<ErrorCode>(wire_.endTransmission());
 }
 
-I2cDualMotor::ErrorCode I2cDualMotor::Pwm(const Channel ch, uint16_t duty) {
+I2cDualMotor::ErrorCode I2cDualMotor::Pwm(const PwmChannel ch, uint16_t duty) {
   duty = min(kMaxPwmDuty, duty);
   wire_.beginTransmission(i2c_address_);
   wire_.write(kMemeAddrPwmDuty0 + (ch << 1));

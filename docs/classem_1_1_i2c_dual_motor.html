@@ -114,50 +114,55 @@ Public 类型</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a0271018bc5e95591f30d2a8d2f64e1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误码  <a href="#a0271018bc5e95591f30d2a8d2f64e1d4">更多...</a><br /></td></tr>
 <tr class="separator:a0271018bc5e95591f30d2a8d2f64e1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add439812fd72bf4440fe8a027adec106" id="r_add439812fd72bf4440fe8a027adec106"><td class="memItemLeft" align="right" valign="top"><a id="add439812fd72bf4440fe8a027adec106" name="add439812fd72bf4440fe8a027adec106"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Channel</b> : uint8_t { <b>kCh0</b> = 0
-, <b>kCh1</b>
-, <b>kCh2</b>
-, <b>kCh3</b>
+<tr class="memitem:acfbbe7feb32fdeb72aaac573c9c2feed" id="r_acfbbe7feb32fdeb72aaac573c9c2feed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfbbe7feb32fdeb72aaac573c9c2feed">PwmChannel</a> : uint8_t { <a class="el" href="#acfbbe7feb32fdeb72aaac573c9c2feedac64941f32eaf4925c151acb320159b15">kCh0</a>
+, <a class="el" href="#acfbbe7feb32fdeb72aaac573c9c2feeda1df06b04a6755734713f86bdf1c40775">kCh1</a>
+, <a class="el" href="#acfbbe7feb32fdeb72aaac573c9c2feeda5de240f862c8189c2017727e12e1f611">kCh2</a>
+, <a class="el" href="#acfbbe7feb32fdeb72aaac573c9c2feedafad57655ceafc8b5005d8c9255b871c7">kCh3</a>
  }</td></tr>
-<tr class="separator:add439812fd72bf4440fe8a027adec106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:acfbbe7feb32fdeb72aaac573c9c2feed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:af6f121f8c3c84df55be8fe272f615c84" id="r_af6f121f8c3c84df55be8fe272f615c84"><td class="memItemLeft" align="right" valign="top"><a id="af6f121f8c3c84df55be8fe272f615c84" name="af6f121f8c3c84df55be8fe272f615c84"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>I2cDualMotor</b> (const uint8_t i2c_address=kDefaultI2cAddress, TwoWire &amp;wire=Wire)</td></tr>
+<tr class="memitem:af6f121f8c3c84df55be8fe272f615c84" id="r_af6f121f8c3c84df55be8fe272f615c84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6f121f8c3c84df55be8fe272f615c84">I2cDualMotor</a> (const uint8_t i2c_address=<a class="el" href="#a93d8a5853cba0b9755e1dd34246d3f0e">kDefaultI2cAddress</a>, TwoWire &amp;wire=Wire)</td></tr>
+<tr class="memdesc:af6f121f8c3c84df55be8fe272f615c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，指定 I2C 地址和 TwoWire 对象。  <br /></td></tr>
 <tr class="separator:af6f121f8c3c84df55be8fe272f615c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf215b07806d4443d197da44b943816f" id="r_aaf215b07806d4443d197da44b943816f"><td class="memItemLeft" align="right" valign="top"><a id="aaf215b07806d4443d197da44b943816f" name="aaf215b07806d4443d197da44b943816f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>I2cDualMotor</b> (TwoWire &amp;wire)</td></tr>
+<tr class="memitem:aaf215b07806d4443d197da44b943816f" id="r_aaf215b07806d4443d197da44b943816f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf215b07806d4443d197da44b943816f">I2cDualMotor</a> (TwoWire &amp;wire)</td></tr>
+<tr class="memdesc:aaf215b07806d4443d197da44b943816f"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，使用默认 I2C 地址和指定的 TwoWire 对象。  <br /></td></tr>
 <tr class="separator:aaf215b07806d4443d197da44b943816f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb02783e050f6db960763079621ef409" id="r_afb02783e050f6db960763079621ef409"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb02783e050f6db960763079621ef409">Init</a> (const uint32_t frequency=1000 *1000)</td></tr>
-<tr class="memdesc:afb02783e050f6db960763079621ef409"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化函数  <br /></td></tr>
+<tr class="memdesc:afb02783e050f6db960763079621ef409"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化函数。  <br /></td></tr>
 <tr class="separator:afb02783e050f6db960763079621ef409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a334371ed2a41c70fabf3efad2ed9ad94" id="r_a334371ed2a41c70fabf3efad2ed9ad94"><td class="memItemLeft" align="right" valign="top"><a id="a334371ed2a41c70fabf3efad2ed9ad94" name="a334371ed2a41c70fabf3efad2ed9ad94"></a>
-<a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Pwm</b> (const Channel, uint16_t duty)</td></tr>
-<tr class="separator:a334371ed2a41c70fabf3efad2ed9ad94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee5333533bc148646fe82e1bc795e55" id="r_aeee5333533bc148646fe82e1bc795e55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeee5333533bc148646fe82e1bc795e55">Pwm</a> (const <a class="el" href="#acfbbe7feb32fdeb72aaac573c9c2feed">PwmChannel</a> ch, uint16_t duty)</td></tr>
+<tr class="memdesc:aeee5333533bc148646fe82e1bc795e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置指定通道的 PWM 占空比。  <br /></td></tr>
+<tr class="separator:aeee5333533bc148646fe82e1bc795e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
-<tr class="memitem:acb54dcfe0520690c37c142d434599932" id="r_acb54dcfe0520690c37c142d434599932"><td class="memItemLeft" align="right" valign="top"><a id="acb54dcfe0520690c37c142d434599932" name="acb54dcfe0520690c37c142d434599932"></a>
-static String&#160;</td><td class="memItemRight" valign="bottom"><b>Version</b> ()</td></tr>
+<tr class="memitem:acb54dcfe0520690c37c142d434599932" id="r_acb54dcfe0520690c37c142d434599932"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb54dcfe0520690c37c142d434599932">Version</a> ()</td></tr>
+<tr class="memdesc:acb54dcfe0520690c37c142d434599932"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取版本号字符串。  <br /></td></tr>
 <tr class="separator:acb54dcfe0520690c37c142d434599932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 静态 Public 属性</h2></td></tr>
 <tr class="memitem:a5c8a6af9084f9aefeb9603ce88491d9b" id="r_a5c8a6af9084f9aefeb9603ce88491d9b"><td class="memItemLeft" align="right" valign="top"><a id="a5c8a6af9084f9aefeb9603ce88491d9b" name="a5c8a6af9084f9aefeb9603ce88491d9b"></a>
 static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>kVersionMajor</b> = 1</td></tr>
+<tr class="memdesc:a5c8a6af9084f9aefeb9603ce88491d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">主版本号。 <br /></td></tr>
 <tr class="separator:a5c8a6af9084f9aefeb9603ce88491d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4db134da36ca52e07eecb04f125a38e0" id="r_a4db134da36ca52e07eecb04f125a38e0"><td class="memItemLeft" align="right" valign="top"><a id="a4db134da36ca52e07eecb04f125a38e0" name="a4db134da36ca52e07eecb04f125a38e0"></a>
 static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>kVersionMinor</b> = 0</td></tr>
+<tr class="memdesc:a4db134da36ca52e07eecb04f125a38e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">次版本号。 <br /></td></tr>
 <tr class="separator:a4db134da36ca52e07eecb04f125a38e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adafa8b472f956a1a501b7e95db4b49ff" id="r_adafa8b472f956a1a501b7e95db4b49ff"><td class="memItemLeft" align="right" valign="top"><a id="adafa8b472f956a1a501b7e95db4b49ff" name="adafa8b472f956a1a501b7e95db4b49ff"></a>
 static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>kVersionPatch</b> = 0</td></tr>
+<tr class="memdesc:adafa8b472f956a1a501b7e95db4b49ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">修订版本号。 <br /></td></tr>
 <tr class="separator:adafa8b472f956a1a501b7e95db4b49ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d8a5853cba0b9755e1dd34246d3f0e" id="r_a93d8a5853cba0b9755e1dd34246d3f0e"><td class="memItemLeft" align="right" valign="top"><a id="a93d8a5853cba0b9755e1dd34246d3f0e" name="a93d8a5853cba0b9755e1dd34246d3f0e"></a>
 static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>kDefaultI2cAddress</b> = 0x15</td></tr>
+<tr class="memdesc:a93d8a5853cba0b9755e1dd34246d3f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认 I2C 地址：0x15 <br /></td></tr>
 <tr class="separator:a93d8a5853cba0b9755e1dd34246d3f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e4654e0f1e2edd50ece8d0b7f8766b" id="r_a72e4654e0f1e2edd50ece8d0b7f8766b"><td class="memItemLeft" align="right" valign="top"><a id="a72e4654e0f1e2edd50ece8d0b7f8766b" name="a72e4654e0f1e2edd50ece8d0b7f8766b"></a>
 static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxPwmDuty</b> = 4095</td></tr>
+<tr class="memdesc:a72e4654e0f1e2edd50ece8d0b7f8766b"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大 PWM 占空比：4095 <br /></td></tr>
 <tr class="separator:a72e4654e0f1e2edd50ece8d0b7f8766b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -198,6 +203,102 @@ static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<a id="acfbbe7feb32fdeb72aaac573c9c2feed" name="acfbbe7feb32fdeb72aaac573c9c2feed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfbbe7feb32fdeb72aaac573c9c2feed">&#9670;&#160;</a></span>PwmChannel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#acfbbe7feb32fdeb72aaac573c9c2feed">em::I2cDualMotor::PwmChannel</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="acfbbe7feb32fdeb72aaac573c9c2feedac64941f32eaf4925c151acb320159b15" name="acfbbe7feb32fdeb72aaac573c9c2feedac64941f32eaf4925c151acb320159b15"></a>kCh0&#160;</td><td class="fielddoc"><p>0: PWM通道0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acfbbe7feb32fdeb72aaac573c9c2feeda1df06b04a6755734713f86bdf1c40775" name="acfbbe7feb32fdeb72aaac573c9c2feeda1df06b04a6755734713f86bdf1c40775"></a>kCh1&#160;</td><td class="fielddoc"><p>1: PWM通道1 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acfbbe7feb32fdeb72aaac573c9c2feeda5de240f862c8189c2017727e12e1f611" name="acfbbe7feb32fdeb72aaac573c9c2feeda5de240f862c8189c2017727e12e1f611"></a>kCh2&#160;</td><td class="fielddoc"><p>2: PWM通道2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acfbbe7feb32fdeb72aaac573c9c2feedafad57655ceafc8b5005d8c9255b871c7" name="acfbbe7feb32fdeb72aaac573c9c2feedafad57655ceafc8b5005d8c9255b871c7"></a>kCh3&#160;</td><td class="fielddoc"><p>3: PWM通道3 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="af6f121f8c3c84df55be8fe272f615c84" name="af6f121f8c3c84df55be8fe272f615c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f121f8c3c84df55be8fe272f615c84">&#9670;&#160;</a></span>I2cDualMotor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">em::I2cDualMotor::I2cDualMotor </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>i2c_address</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a93d8a5853cba0b9755e1dd34246d3f0e">kDefaultI2cAddress</a></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TwoWire &amp;</td>          <td class="paramname"><span class="paramname"><em>wire</em></span><span class="paramdefsep"> = </span><span class="paramdefval">Wire</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数，指定 I2C 地址和 TwoWire 对象。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c_address</td><td>I2C 地址，默认为 <a class="el" href="#a93d8a5853cba0b9755e1dd34246d3f0e">kDefaultI2cAddress</a> 。 </td></tr>
+    <tr><td class="paramname">wire</td><td>TwoWire 对象引用，默认为 Wire。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf215b07806d4443d197da44b943816f" name="aaf215b07806d4443d197da44b943816f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf215b07806d4443d197da44b943816f">&#9670;&#160;</a></span>I2cDualMotor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">em::I2cDualMotor::I2cDualMotor </td>
+          <td>(</td>
+          <td class="paramtype">TwoWire &amp;</td>          <td class="paramname"><span class="paramname"><em>wire</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数，使用默认 I2C 地址和指定的 TwoWire 对象。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wire</td><td>TwoWire 对象引用。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">成员函数说明</h2>
 <a id="afb02783e050f6db960763079621ef409" name="afb02783e050f6db960763079621ef409"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb02783e050f6db960763079621ef409">&#9670;&#160;</a></span>Init()</h2>
@@ -214,8 +315,75 @@ static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>
       </table>
 </div><div class="memdoc">
 
-<p>初始化函数 </p>
-<dl class="section return"><dt>返回</dt><dd>返回值请参考 <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a> </dd></dl>
+<p>初始化函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frequency</td><td>I2C 频率，默认为 1000 * 1000。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回值请参考 <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a> 。 </dd></dl>
+
+</div>
+</div>
+<a id="aeee5333533bc148646fe82e1bc795e55" name="aeee5333533bc148646fe82e1bc795e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee5333533bc148646fe82e1bc795e55">&#9670;&#160;</a></span>Pwm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">I2cDualMotor::ErrorCode</a> em::I2cDualMotor::Pwm </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#acfbbe7feb32fdeb72aaac573c9c2feed">PwmChannel</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>duty</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置指定通道的 PWM 占空比。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>PWM通道，请参考 <a class="el" href="#acfbbe7feb32fdeb72aaac573c9c2feed">PwmChannel</a> 。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">duty</td><td>PWM占空比，范围：0 - 4095。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回值请参考 <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a> 。 </dd></dl>
+
+</div>
+</div>
+<a id="acb54dcfe0520690c37c142d434599932" name="acb54dcfe0520690c37c142d434599932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb54dcfe0520690c37c142d434599932">&#9670;&#160;</a></span>Version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String em::I2cDualMotor::Version </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取版本号字符串。 </p>
+<dl class="section return"><dt>返回</dt><dd>版本号字符串，格式为 major.minor.patch。 </dd></dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="i2c_dual_motor_8ino-example.html#a1">i2c_dual_motor.ino</a>.</dd>
+</dl>
 
 </div>
 </div>

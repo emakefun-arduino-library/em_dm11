@@ -1,11 +1,20 @@
 var searchData=
 [
-  ['ki2cdatatoolongtofitintransmitbuffer_0',['kI2cDataTooLongToFitInTransmitBuffer',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4a86b521181f13d984f7f438dc25566b1c',1,'em::I2cDualMotor']]],
-  ['ki2cothererror_1',['kI2cOtherError',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4ad608651fda7af9f43426b9d6f6ce568a',1,'em::I2cDualMotor']]],
-  ['ki2creceivednackontransmitofaddress_2',['kI2cReceivedNackOnTransmitOfAddress',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4a922aab6315b84726624bed20ea14f2b6',1,'em::I2cDualMotor']]],
-  ['ki2creceivednackontransmitofdata_3',['kI2cReceivedNackOnTransmitOfData',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4a30120b2d5cf0438cd0ca8ccad45cbfd4',1,'em::I2cDualMotor']]],
-  ['ki2ctimeout_4',['kI2cTimeout',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4ac899de8d45942c32ebc4471dcc0179c4',1,'em::I2cDualMotor']]],
-  ['kinvalidparameter_5',['kInvalidParameter',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4a629a9c6afb7d99b74fd25657a3cab0cb',1,'em::I2cDualMotor']]],
-  ['kok_6',['kOK',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4ad30422763391c2e10c0a1315689f6cfe',1,'em::I2cDualMotor']]],
-  ['kunknownerror_7',['kUnknownError',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4af15161eb622c255907bb617adf3c4c66',1,'em::I2cDualMotor']]]
+  ['kch0_0',['kCh0',['../classem_1_1_i2c_dual_motor.html#acfbbe7feb32fdeb72aaac573c9c2feedac64941f32eaf4925c151acb320159b15',1,'em::I2cDualMotor']]],
+  ['kch1_1',['kCh1',['../classem_1_1_i2c_dual_motor.html#acfbbe7feb32fdeb72aaac573c9c2feeda1df06b04a6755734713f86bdf1c40775',1,'em::I2cDualMotor']]],
+  ['kch2_2',['kCh2',['../classem_1_1_i2c_dual_motor.html#acfbbe7feb32fdeb72aaac573c9c2feeda5de240f862c8189c2017727e12e1f611',1,'em::I2cDualMotor']]],
+  ['kch3_3',['kCh3',['../classem_1_1_i2c_dual_motor.html#acfbbe7feb32fdeb72aaac573c9c2feedafad57655ceafc8b5005d8c9255b871c7',1,'em::I2cDualMotor']]],
+  ['kdefaulti2caddress_4',['kDefaultI2cAddress',['../classem_1_1_i2c_dual_motor.html#a93d8a5853cba0b9755e1dd34246d3f0e',1,'em::I2cDualMotor']]],
+  ['ki2cdatatoolongtofitintransmitbuffer_5',['kI2cDataTooLongToFitInTransmitBuffer',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4a86b521181f13d984f7f438dc25566b1c',1,'em::I2cDualMotor']]],
+  ['ki2cothererror_6',['kI2cOtherError',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4ad608651fda7af9f43426b9d6f6ce568a',1,'em::I2cDualMotor']]],
+  ['ki2creceivednackontransmitofaddress_7',['kI2cReceivedNackOnTransmitOfAddress',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4a922aab6315b84726624bed20ea14f2b6',1,'em::I2cDualMotor']]],
+  ['ki2creceivednackontransmitofdata_8',['kI2cReceivedNackOnTransmitOfData',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4a30120b2d5cf0438cd0ca8ccad45cbfd4',1,'em::I2cDualMotor']]],
+  ['ki2ctimeout_9',['kI2cTimeout',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4ac899de8d45942c32ebc4471dcc0179c4',1,'em::I2cDualMotor']]],
+  ['kinvalidparameter_10',['kInvalidParameter',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4a629a9c6afb7d99b74fd25657a3cab0cb',1,'em::I2cDualMotor']]],
+  ['kmaxpwmduty_11',['kMaxPwmDuty',['../classem_1_1_i2c_dual_motor.html#a72e4654e0f1e2edd50ece8d0b7f8766b',1,'em::I2cDualMotor']]],
+  ['kok_12',['kOK',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4ad30422763391c2e10c0a1315689f6cfe',1,'em::I2cDualMotor']]],
+  ['kunknownerror_13',['kUnknownError',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4af15161eb622c255907bb617adf3c4c66',1,'em::I2cDualMotor']]],
+  ['kversionmajor_14',['kVersionMajor',['../classem_1_1_i2c_dual_motor.html#a5c8a6af9084f9aefeb9603ce88491d9b',1,'em::I2cDualMotor']]],
+  ['kversionminor_15',['kVersionMinor',['../classem_1_1_i2c_dual_motor.html#a4db134da36ca52e07eecb04f125a38e0',1,'em::I2cDualMotor']]],
+  ['kversionpatch_16',['kVersionPatch',['../classem_1_1_i2c_dual_motor.html#adafa8b472f956a1a501b7e95db4b49ff',1,'em::I2cDualMotor']]]
 ];
