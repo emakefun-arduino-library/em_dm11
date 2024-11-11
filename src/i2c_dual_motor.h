@@ -1,19 +1,20 @@
 #pragma once
 
-#ifndef EMAKEFUN_I2C_DEVICE_H_
-#define EMAKEFUN_I2C_DEVICE_H_
+#ifndef EM_I2C_DUAL_MOTOR_H_
+#define EM_I2C_DUAL_MOTOR_H_
 
 #include <WString.h>
 #include <Wire.h>
 #include <stdint.h>
 
-namespace emakefun {
-class I2cDevice {
+namespace em {
+class I2cDualMotor {
  public:
-  static constexpr uint32_t kVersionMajor = 1;
-  static constexpr uint32_t kVersionMinor = 0;
-  static constexpr uint32_t kVersionPatch = 0;
-  static constexpr uint8_t kDefaultI2cAddress = 0x00;
+  static constexpr uint8_t kVersionMajor = 1;
+  static constexpr uint8_t kVersionMinor = 0;
+  static constexpr uint8_t kVersionPatch = 0;
+  static constexpr uint8_t kDefaultI2cAddress = 0x15;
+  static constexpr uint16_t kMaxPwmDuty = 4095;
 
   /**
    * @enum ErrorCode
@@ -30,27 +31,36 @@ class I2cDevice {
     kUnknownError = 7,                        /**< 7：未知错误*/
   };
 
+  enum Channel : uint8_t {
+    kCh0 = 0,
+    kCh1,
+    kCh2,
+    kCh3,
+  };
+
   static String Version() {
     return String(kVersionMajor) + '.' + kVersionMinor + '.' + kVersionPatch;
   }
 
-  explicit I2cDevice(const uint8_t i2c_address = kDefaultI2cAddress, TwoWire& wire = Wire);
+  explicit I2cDualMotor(const uint8_t i2c_address = kDefaultI2cAddress, TwoWire& wire = Wire);
 
-  explicit I2cDevice(TwoWire& wire) : I2cDevice(kDefaultI2cAddress, wire) {
+  explicit I2cDualMotor(TwoWire& wire) : I2cDualMotor(kDefaultI2cAddress, wire) {
   }
 
   /**
    * @brief 初始化函数
    * @return 返回值请参考 @ref ErrorCode
    */
-  ErrorCode Initialize();
+  ErrorCode Init(const uint32_t frequency = 1000 * 1000);
+
+  ErrorCode Pwm(const Channel, uint16_t duty);
 
  private:
-  I2cDevice(const I2cDevice&) = delete;
-  I2cDevice& operator=(const I2cDevice&) = delete;
+  I2cDualMotor(const I2cDualMotor&) = delete;
+  I2cDualMotor& operator=(const I2cDualMotor&) = delete;
 
   const uint8_t i2c_address_ = kDefaultI2cAddress;
   TwoWire& wire_ = Wire;
 };
-}  // namespace emakefun
+}  // namespace em
 #endif

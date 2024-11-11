@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['errorcode_0',['ErrorCode',['../classemakefun_1_1_i2c_device.html#a8c25d584e062e6f9940dd5c2417f6176',1,'emakefun::I2cDevice']]]
+  ['errorcode_0',['ErrorCode',['../classem_1_1_i2c_dual_motor.html#a0271018bc5e95591f30d2a8d2f64e1d4',1,'em::I2cDualMotor']]]
 ];

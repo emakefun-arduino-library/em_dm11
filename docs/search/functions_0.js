@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialize_0',['Initialize',['../classemakefun_1_1_i2c_device.html#ab6a4d05c0861cfe593f0da272fa34673',1,'emakefun::I2cDevice']]]
+  ['init_0',['Init',['../classem_1_1_i2c_dual_motor.html#afb02783e050f6db960763079621ef409',1,'em::I2cDualMotor']]]
 ];

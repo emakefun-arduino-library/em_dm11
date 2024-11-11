@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Emakefun I2C Dual Motor: em::I2cDualMotor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Emakefun I2C Dual Motor<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>em</b></li><li class="navelem"><a class="el" href="classem_1_1_i2c_dual_motor.html">I2cDualMotor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="classem_1_1_i2c_dual_motor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">em::I2cDualMotor类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a0271018bc5e95591f30d2a8d2f64e1d4" id="r_a0271018bc5e95591f30d2a8d2f64e1d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4ad30422763391c2e10c0a1315689f6cfe">kOK</a> = 0
+, <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4a86b521181f13d984f7f438dc25566b1c">kI2cDataTooLongToFitInTransmitBuffer</a> = 1
+, <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4a922aab6315b84726624bed20ea14f2b6">kI2cReceivedNackOnTransmitOfAddress</a> = 2
+, <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4a30120b2d5cf0438cd0ca8ccad45cbfd4">kI2cReceivedNackOnTransmitOfData</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4ad608651fda7af9f43426b9d6f6ce568a">kI2cOtherError</a> = 4
+, <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4ac899de8d45942c32ebc4471dcc0179c4">kI2cTimeout</a> = 5
+, <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4a629a9c6afb7d99b74fd25657a3cab0cb">kInvalidParameter</a> = 6
+, <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4af15161eb622c255907bb617adf3c4c66">kUnknownError</a> = 7
+<br />
+ }</td></tr>
+<tr class="memdesc:a0271018bc5e95591f30d2a8d2f64e1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误码  <a href="#a0271018bc5e95591f30d2a8d2f64e1d4">更多...</a><br /></td></tr>
+<tr class="separator:a0271018bc5e95591f30d2a8d2f64e1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add439812fd72bf4440fe8a027adec106" id="r_add439812fd72bf4440fe8a027adec106"><td class="memItemLeft" align="right" valign="top"><a id="add439812fd72bf4440fe8a027adec106" name="add439812fd72bf4440fe8a027adec106"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Channel</b> : uint8_t { <b>kCh0</b> = 0
+, <b>kCh1</b>
+, <b>kCh2</b>
+, <b>kCh3</b>
+ }</td></tr>
+<tr class="separator:add439812fd72bf4440fe8a027adec106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af6f121f8c3c84df55be8fe272f615c84" id="r_af6f121f8c3c84df55be8fe272f615c84"><td class="memItemLeft" align="right" valign="top"><a id="af6f121f8c3c84df55be8fe272f615c84" name="af6f121f8c3c84df55be8fe272f615c84"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>I2cDualMotor</b> (const uint8_t i2c_address=kDefaultI2cAddress, TwoWire &amp;wire=Wire)</td></tr>
+<tr class="separator:af6f121f8c3c84df55be8fe272f615c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf215b07806d4443d197da44b943816f" id="r_aaf215b07806d4443d197da44b943816f"><td class="memItemLeft" align="right" valign="top"><a id="aaf215b07806d4443d197da44b943816f" name="aaf215b07806d4443d197da44b943816f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>I2cDualMotor</b> (TwoWire &amp;wire)</td></tr>
+<tr class="separator:aaf215b07806d4443d197da44b943816f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb02783e050f6db960763079621ef409" id="r_afb02783e050f6db960763079621ef409"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb02783e050f6db960763079621ef409">Init</a> (const uint32_t frequency=1000 *1000)</td></tr>
+<tr class="memdesc:afb02783e050f6db960763079621ef409"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化函数  <br /></td></tr>
+<tr class="separator:afb02783e050f6db960763079621ef409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334371ed2a41c70fabf3efad2ed9ad94" id="r_a334371ed2a41c70fabf3efad2ed9ad94"><td class="memItemLeft" align="right" valign="top"><a id="a334371ed2a41c70fabf3efad2ed9ad94" name="a334371ed2a41c70fabf3efad2ed9ad94"></a>
+<a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Pwm</b> (const Channel, uint16_t duty)</td></tr>
+<tr class="separator:a334371ed2a41c70fabf3efad2ed9ad94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:acb54dcfe0520690c37c142d434599932" id="r_acb54dcfe0520690c37c142d434599932"><td class="memItemLeft" align="right" valign="top"><a id="acb54dcfe0520690c37c142d434599932" name="acb54dcfe0520690c37c142d434599932"></a>
+static String&#160;</td><td class="memItemRight" valign="bottom"><b>Version</b> ()</td></tr>
+<tr class="separator:acb54dcfe0520690c37c142d434599932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a5c8a6af9084f9aefeb9603ce88491d9b" id="r_a5c8a6af9084f9aefeb9603ce88491d9b"><td class="memItemLeft" align="right" valign="top"><a id="a5c8a6af9084f9aefeb9603ce88491d9b" name="a5c8a6af9084f9aefeb9603ce88491d9b"></a>
+static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>kVersionMajor</b> = 1</td></tr>
+<tr class="separator:a5c8a6af9084f9aefeb9603ce88491d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db134da36ca52e07eecb04f125a38e0" id="r_a4db134da36ca52e07eecb04f125a38e0"><td class="memItemLeft" align="right" valign="top"><a id="a4db134da36ca52e07eecb04f125a38e0" name="a4db134da36ca52e07eecb04f125a38e0"></a>
+static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>kVersionMinor</b> = 0</td></tr>
+<tr class="separator:a4db134da36ca52e07eecb04f125a38e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafa8b472f956a1a501b7e95db4b49ff" id="r_adafa8b472f956a1a501b7e95db4b49ff"><td class="memItemLeft" align="right" valign="top"><a id="adafa8b472f956a1a501b7e95db4b49ff" name="adafa8b472f956a1a501b7e95db4b49ff"></a>
+static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>kVersionPatch</b> = 0</td></tr>
+<tr class="separator:adafa8b472f956a1a501b7e95db4b49ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d8a5853cba0b9755e1dd34246d3f0e" id="r_a93d8a5853cba0b9755e1dd34246d3f0e"><td class="memItemLeft" align="right" valign="top"><a id="a93d8a5853cba0b9755e1dd34246d3f0e" name="a93d8a5853cba0b9755e1dd34246d3f0e"></a>
+static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>kDefaultI2cAddress</b> = 0x15</td></tr>
+<tr class="separator:a93d8a5853cba0b9755e1dd34246d3f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e4654e0f1e2edd50ece8d0b7f8766b" id="r_a72e4654e0f1e2edd50ece8d0b7f8766b"><td class="memItemLeft" align="right" valign="top"><a id="a72e4654e0f1e2edd50ece8d0b7f8766b" name="a72e4654e0f1e2edd50ece8d0b7f8766b"></a>
+static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxPwmDuty</b> = 4095</td></tr>
+<tr class="separator:a72e4654e0f1e2edd50ece8d0b7f8766b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><dl class="section examples"><dt>示例</dt><dd><a class="el" href="i2c_dual_motor_8ino-example.html#_a0">i2c_dual_motor.ino</a>.</dd>
+</dl>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a0271018bc5e95591f30d2a8d2f64e1d4" name="a0271018bc5e95591f30d2a8d2f64e1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0271018bc5e95591f30d2a8d2f64e1d4">&#9670;&#160;</a></span>ErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">em::I2cDualMotor::ErrorCode</a> : uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>错误码 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a0271018bc5e95591f30d2a8d2f64e1d4ad30422763391c2e10c0a1315689f6cfe" name="a0271018bc5e95591f30d2a8d2f64e1d4ad30422763391c2e10c0a1315689f6cfe"></a>kOK&#160;</td><td class="fielddoc"><p>0：成功 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0271018bc5e95591f30d2a8d2f64e1d4a86b521181f13d984f7f438dc25566b1c" name="a0271018bc5e95591f30d2a8d2f64e1d4a86b521181f13d984f7f438dc25566b1c"></a>kI2cDataTooLongToFitInTransmitBuffer&#160;</td><td class="fielddoc"><p>1：I2C数据太长，无法装入传输缓冲区 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0271018bc5e95591f30d2a8d2f64e1d4a922aab6315b84726624bed20ea14f2b6" name="a0271018bc5e95591f30d2a8d2f64e1d4a922aab6315b84726624bed20ea14f2b6"></a>kI2cReceivedNackOnTransmitOfAddress&#160;</td><td class="fielddoc"><p>2：在I2C发送地址时收到NACK </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0271018bc5e95591f30d2a8d2f64e1d4a30120b2d5cf0438cd0ca8ccad45cbfd4" name="a0271018bc5e95591f30d2a8d2f64e1d4a30120b2d5cf0438cd0ca8ccad45cbfd4"></a>kI2cReceivedNackOnTransmitOfData&#160;</td><td class="fielddoc"><p>3：在I2C发送数据时收到NACK </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0271018bc5e95591f30d2a8d2f64e1d4ad608651fda7af9f43426b9d6f6ce568a" name="a0271018bc5e95591f30d2a8d2f64e1d4ad608651fda7af9f43426b9d6f6ce568a"></a>kI2cOtherError&#160;</td><td class="fielddoc"><p>4：其他I2C错误 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0271018bc5e95591f30d2a8d2f64e1d4ac899de8d45942c32ebc4471dcc0179c4" name="a0271018bc5e95591f30d2a8d2f64e1d4ac899de8d45942c32ebc4471dcc0179c4"></a>kI2cTimeout&#160;</td><td class="fielddoc"><p>5：I2C通讯超时 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0271018bc5e95591f30d2a8d2f64e1d4a629a9c6afb7d99b74fd25657a3cab0cb" name="a0271018bc5e95591f30d2a8d2f64e1d4a629a9c6afb7d99b74fd25657a3cab0cb"></a>kInvalidParameter&#160;</td><td class="fielddoc"><p>6：参数错误 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0271018bc5e95591f30d2a8d2f64e1d4af15161eb622c255907bb617adf3c4c66" name="a0271018bc5e95591f30d2a8d2f64e1d4af15161eb622c255907bb617adf3c4c66"></a>kUnknownError&#160;</td><td class="fielddoc"><p>7：未知错误 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="afb02783e050f6db960763079621ef409" name="afb02783e050f6db960763079621ef409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb02783e050f6db960763079621ef409">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">I2cDualMotor::ErrorCode</a> em::I2cDualMotor::Init </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t</td>          <td class="paramname"><span class="paramname"><em>frequency</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1000&#160;*&#160;1000</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化函数 </p>
+<dl class="section return"><dt>返回</dt><dd>返回值请参考 <a class="el" href="#a0271018bc5e95591f30d2a8d2f64e1d4">ErrorCode</a> </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>src/<a class="el" href="i2c__dual__motor_8h_source.html">i2c_dual_motor.h</a></li>
+<li>src/<b>i2c_dual_motor.cpp</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
