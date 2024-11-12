@@ -1,8 +1,8 @@
 @INCLUDE_PATH  = doxygen
 @INCLUDE = base.cfg
-PROJECT_NAME     = "Emakefun I2C Dual Motor"
+PROJECT_NAME     = "Emakefun I2C To PWM"
 PROJECT_NUMBER   = 1.0
 ENABLED_SECTIONS = Chinese
 OUTPUT_LANGUAGE  = Chinese
 INPUT            = src \
-                   examples/i2c_dual_motor/i2c_dual_motor.ino
+                   examples/i2c_to_pwm/i2c_to_pwm.ino
