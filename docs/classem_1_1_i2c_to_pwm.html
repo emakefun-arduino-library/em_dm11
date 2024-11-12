@@ -123,9 +123,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:af0d5d2c86228ff72a66cd83b33c6c80d" id="r_af0d5d2c86228ff72a66cd83b33c6c80d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0d5d2c86228ff72a66cd83b33c6c80d">I2cToPwm</a> (TwoWire &amp;wire)</td></tr>
 <tr class="memdesc:af0d5d2c86228ff72a66cd83b33c6c80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，使用默认 I2C 地址和指定的 TwoWire 对象。  <br /></td></tr>
 <tr class="separator:af0d5d2c86228ff72a66cd83b33c6c80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa60abfce669271f30f16947119cb10f" id="r_afa60abfce669271f30f16947119cb10f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a70d588609d1ab722df8b079c626cdcb6">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa60abfce669271f30f16947119cb10f">Init</a> (const uint16_t frequency=1000)</td></tr>
-<tr class="memdesc:afa60abfce669271f30f16947119cb10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化函数。  <br /></td></tr>
-<tr class="separator:afa60abfce669271f30f16947119cb10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d40ea27fc708779fc50c9940a7d4fb" id="r_ab8d40ea27fc708779fc50c9940a7d4fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a70d588609d1ab722df8b079c626cdcb6">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8d40ea27fc708779fc50c9940a7d4fb">Init</a> (const uint16_t frequency_hz=1000)</td></tr>
+<tr class="memdesc:ab8d40ea27fc708779fc50c9940a7d4fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化函数。  <br /></td></tr>
+<tr class="separator:ab8d40ea27fc708779fc50c9940a7d4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa741d8afdfd99fdda04504e07ac6a15a" id="r_aa741d8afdfd99fdda04504e07ac6a15a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a70d588609d1ab722df8b079c626cdcb6">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa741d8afdfd99fdda04504e07ac6a15a">Pwm</a> (const uint8_t ch, uint16_t duty)</td></tr>
 <tr class="memdesc:aa741d8afdfd99fdda04504e07ac6a15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置指定通道的 PWM 占空比。  <br /></td></tr>
 <tr class="separator:aa741d8afdfd99fdda04504e07ac6a15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,19 +152,23 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>k
 <tr class="separator:ad933d77c02e4e816bbc84c5ad6db81c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63563dc023fd3911ff6bd9847ce20d96" id="r_a63563dc023fd3911ff6bd9847ce20d96"><td class="memItemLeft" align="right" valign="top"><a id="a63563dc023fd3911ff6bd9847ce20d96" name="a63563dc023fd3911ff6bd9847ce20d96"></a>
 static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>kDefaultI2cAddress</b> = 0x15</td></tr>
-<tr class="memdesc:a63563dc023fd3911ff6bd9847ce20d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认I2C地址：0x15。 <br /></td></tr>
+<tr class="memdesc:a63563dc023fd3911ff6bd9847ce20d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认I2C地址。 <br /></td></tr>
 <tr class="separator:a63563dc023fd3911ff6bd9847ce20d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41858c7d2d9de43bdd8db93f021d4d9f" id="r_a41858c7d2d9de43bdd8db93f021d4d9f"><td class="memItemLeft" align="right" valign="top"><a id="a41858c7d2d9de43bdd8db93f021d4d9f" name="a41858c7d2d9de43bdd8db93f021d4d9f"></a>
+static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>kMinFrequencyHz</b> = 1</td></tr>
+<tr class="memdesc:a41858c7d2d9de43bdd8db93f021d4d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小PWM波频率。 <br /></td></tr>
+<tr class="separator:a41858c7d2d9de43bdd8db93f021d4d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9062d9d902e5dc77f9254a6e6000cf49" id="r_a9062d9d902e5dc77f9254a6e6000cf49"><td class="memItemLeft" align="right" valign="top"><a id="a9062d9d902e5dc77f9254a6e6000cf49" name="a9062d9d902e5dc77f9254a6e6000cf49"></a>
 static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxFrequencyHz</b> = 10000</td></tr>
-<tr class="memdesc:a9062d9d902e5dc77f9254a6e6000cf49"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大PWM波频率：10000HZ <br /></td></tr>
+<tr class="memdesc:a9062d9d902e5dc77f9254a6e6000cf49"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大PWM波频率。 <br /></td></tr>
 <tr class="separator:a9062d9d902e5dc77f9254a6e6000cf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf14bdcb1fb4b7e023f5d5fd9cd821b" id="r_a0cf14bdcb1fb4b7e023f5d5fd9cd821b"><td class="memItemLeft" align="right" valign="top"><a id="a0cf14bdcb1fb4b7e023f5d5fd9cd821b" name="a0cf14bdcb1fb4b7e023f5d5fd9cd821b"></a>
 static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxPwmDuty</b> = 4095</td></tr>
-<tr class="memdesc:a0cf14bdcb1fb4b7e023f5d5fd9cd821b"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大PWM占空比：4095。 <br /></td></tr>
+<tr class="memdesc:a0cf14bdcb1fb4b7e023f5d5fd9cd821b"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大PWM占空比。 <br /></td></tr>
 <tr class="separator:a0cf14bdcb1fb4b7e023f5d5fd9cd821b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a957a40744f2453ca260c277e874346a8" id="r_a957a40744f2453ca260c277e874346a8"><td class="memItemLeft" align="right" valign="top"><a id="a957a40744f2453ca260c277e874346a8" name="a957a40744f2453ca260c277e874346a8"></a>
 static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>kPwmChannelNum</b> = 4</td></tr>
-<tr class="memdesc:a957a40744f2453ca260c277e874346a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM通道数：4。 <br /></td></tr>
+<tr class="memdesc:a957a40744f2453ca260c277e874346a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM通道数。 <br /></td></tr>
 <tr class="separator:a957a40744f2453ca260c277e874346a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -278,8 +282,8 @@ static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="afa60abfce669271f30f16947119cb10f" name="afa60abfce669271f30f16947119cb10f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa60abfce669271f30f16947119cb10f">&#9670;&#160;</a></span>Init()</h2>
+<a id="ab8d40ea27fc708779fc50c9940a7d4fb" name="ab8d40ea27fc708779fc50c9940a7d4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d40ea27fc708779fc50c9940a7d4fb">&#9670;&#160;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +291,7 @@ static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>
         <tr>
           <td class="memname"><a class="el" href="#a70d588609d1ab722df8b079c626cdcb6">I2cToPwm::ErrorCode</a> em::I2cToPwm::Init </td>
           <td>(</td>
-          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>frequency</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1000</span></td><td>)</td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>frequency_hz</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1000</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -296,7 +300,7 @@ static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <p>初始化函数。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">frequency</td><td>PWM波频率，单位HZ，范围：1 - 10000，默认为1000。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frequency_hz</td><td>PWM波频率，单位HZ，范围：1 ~ 10000，默认为1000。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -326,8 +330,8 @@ static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <p>设置指定通道的 PWM 占空比。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>PWM通道，范围：0 - 3。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">duty</td><td>PWM占空比，范围：0 - 4095。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>PWM通道，范围：0 ~ 3。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">duty</td><td>PWM占空比，范围：0 ~ 4095。 </td></tr>
   </table>
   </dd>
 </dl>

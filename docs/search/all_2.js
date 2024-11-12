@@ -9,10 +9,11 @@ var searchData=
   ['kinvalidparameter_6',['kInvalidParameter',['../classem_1_1_i2c_to_pwm.html#a70d588609d1ab722df8b079c626cdcb6a5188d1374571cf82714677c325d43de6',1,'em::I2cToPwm']]],
   ['kmaxfrequencyhz_7',['kMaxFrequencyHz',['../classem_1_1_i2c_to_pwm.html#a9062d9d902e5dc77f9254a6e6000cf49',1,'em::I2cToPwm']]],
   ['kmaxpwmduty_8',['kMaxPwmDuty',['../classem_1_1_i2c_to_pwm.html#a0cf14bdcb1fb4b7e023f5d5fd9cd821b',1,'em::I2cToPwm']]],
-  ['kok_9',['kOK',['../classem_1_1_i2c_to_pwm.html#a70d588609d1ab722df8b079c626cdcb6a5e2ae417cc8484d0945286d673bd2d21',1,'em::I2cToPwm']]],
-  ['kpwmchannelnum_10',['kPwmChannelNum',['../classem_1_1_i2c_to_pwm.html#a957a40744f2453ca260c277e874346a8',1,'em::I2cToPwm']]],
-  ['kunknownerror_11',['kUnknownError',['../classem_1_1_i2c_to_pwm.html#a70d588609d1ab722df8b079c626cdcb6a142072c6c49dbf62f1ba80dc49d6cda5',1,'em::I2cToPwm']]],
-  ['kversionmajor_12',['kVersionMajor',['../classem_1_1_i2c_to_pwm.html#af223b3cfeb1f97bd54156c5234093171',1,'em::I2cToPwm']]],
-  ['kversionminor_13',['kVersionMinor',['../classem_1_1_i2c_to_pwm.html#a2c8298557ee13f48334428fe1f704f08',1,'em::I2cToPwm']]],
-  ['kversionpatch_14',['kVersionPatch',['../classem_1_1_i2c_to_pwm.html#ad933d77c02e4e816bbc84c5ad6db81c0',1,'em::I2cToPwm']]]
+  ['kminfrequencyhz_9',['kMinFrequencyHz',['../classem_1_1_i2c_to_pwm.html#a41858c7d2d9de43bdd8db93f021d4d9f',1,'em::I2cToPwm']]],
+  ['kok_10',['kOK',['../classem_1_1_i2c_to_pwm.html#a70d588609d1ab722df8b079c626cdcb6a5e2ae417cc8484d0945286d673bd2d21',1,'em::I2cToPwm']]],
+  ['kpwmchannelnum_11',['kPwmChannelNum',['../classem_1_1_i2c_to_pwm.html#a957a40744f2453ca260c277e874346a8',1,'em::I2cToPwm']]],
+  ['kunknownerror_12',['kUnknownError',['../classem_1_1_i2c_to_pwm.html#a70d588609d1ab722df8b079c626cdcb6a142072c6c49dbf62f1ba80dc49d6cda5',1,'em::I2cToPwm']]],
+  ['kversionmajor_13',['kVersionMajor',['../classem_1_1_i2c_to_pwm.html#af223b3cfeb1f97bd54156c5234093171',1,'em::I2cToPwm']]],
+  ['kversionminor_14',['kVersionMinor',['../classem_1_1_i2c_to_pwm.html#a2c8298557ee13f48334428fe1f704f08',1,'em::I2cToPwm']]],
+  ['kversionpatch_15',['kVersionPatch',['../classem_1_1_i2c_to_pwm.html#ad933d77c02e4e816bbc84c5ad6db81c0',1,'em::I2cToPwm']]]
 ];

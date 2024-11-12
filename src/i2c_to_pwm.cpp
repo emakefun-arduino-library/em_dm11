@@ -17,14 +17,14 @@ namespace em {
 I2cToPwm::I2cToPwm(const uint8_t i2c_address, TwoWire& wire) : i2c_address_(i2c_address), wire_(wire) {
 }
 
-I2cToPwm::ErrorCode I2cToPwm::Init(const uint16_t frequency) {
-  if (frequency == 0 || kMaxFrequencyHz < frequency) {
+I2cToPwm::ErrorCode I2cToPwm::Init(const uint16_t frequency_hz) {
+  if (frequency_hz < kMinFrequencyHz || frequency_hz > kMaxFrequencyHz) {
     return kInvalidParameter;
   }
 
   wire_.beginTransmission(i2c_address_);
   wire_.write(kMemAddrFrequency);
-  wire_.write(reinterpret_cast<const uint8_t*>(&frequency), sizeof(frequency));
+  wire_.write(reinterpret_cast<const uint8_t*>(&frequency_hz), sizeof(frequency_hz));
   return static_cast<ErrorCode>(wire_.endTransmission());
 }
 

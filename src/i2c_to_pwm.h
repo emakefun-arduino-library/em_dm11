@@ -26,22 +26,27 @@ class I2cToPwm {
   static constexpr uint8_t kVersionPatch = 0;
 
   /**
-   * @brief 默认I2C地址：0x15。
+   * @brief 默认I2C地址。
    */
   static constexpr uint8_t kDefaultI2cAddress = 0x15;
 
   /**
-   * @brief 最大PWM波频率：10000HZ
+   * @brief 最小PWM波频率。
+   */
+  static constexpr uint16_t kMinFrequencyHz = 1;
+
+  /**
+   * @brief 最大PWM波频率。
    */
   static constexpr uint16_t kMaxFrequencyHz = 10000;
 
   /**
-   * @brief 最大PWM占空比：4095。
+   * @brief 最大PWM占空比。
    */
   static constexpr uint16_t kMaxPwmDuty = 4095;
 
   /**
-   * @brief PWM通道数：4。
+   * @brief PWM通道数。
    */
   static constexpr uint16_t kPwmChannelNum = 4;
 
@@ -84,15 +89,15 @@ class I2cToPwm {
 
   /**
    * @brief 初始化函数。
-   * @param[in] frequency PWM波频率，单位HZ，范围：1 - 10000，默认为1000。
+   * @param[in] frequency_hz PWM波频率，单位HZ，范围：1 ~ 10000，默认为1000。
    * @return 返回值请参考 @ref ErrorCode 。
    */
-  ErrorCode Init(const uint16_t frequency = 1000);
+  ErrorCode Init(const uint16_t frequency_hz = 1000);
 
   /**
    * @brief 设置指定通道的 PWM 占空比。
-   * @param[in] ch PWM通道，范围：0 - 3。
-   * @param[in] duty PWM占空比，范围：0 - 4095。
+   * @param[in] ch PWM通道，范围：0 ~ 3。
+   * @param[in] duty PWM占空比，范围：0 ~ 4095。
    * @return 返回值请参考 @ref ErrorCode 。
    */
   ErrorCode Pwm(const uint8_t ch, uint16_t duty);
