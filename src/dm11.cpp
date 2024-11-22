@@ -1,4 +1,4 @@
-#include "i2c_to_pwm.h"
+#include "dm11.h"
 
 #include <Arduino.h>
 
@@ -12,12 +12,10 @@ enum MemoryAddress : uint8_t {
 };
 }
 
-namespace em {
-
-I2cToPwm::I2cToPwm(const uint8_t i2c_address, TwoWire& wire) : i2c_address_(i2c_address), wire_(wire) {
+Dm11::Dm11(const uint8_t i2c_address, TwoWire& wire) : i2c_address_(i2c_address), wire_(wire) {
 }
 
-I2cToPwm::ErrorCode I2cToPwm::Init(const uint16_t frequency_hz) {
+Dm11::ErrorCode Dm11::Init(const uint16_t frequency_hz) {
   if (frequency_hz < kMinFrequencyHz || frequency_hz > kMaxFrequencyHz) {
     return kInvalidParameter;
   }
@@ -28,7 +26,7 @@ I2cToPwm::ErrorCode I2cToPwm::Init(const uint16_t frequency_hz) {
   return static_cast<ErrorCode>(wire_.endTransmission());
 }
 
-I2cToPwm::ErrorCode I2cToPwm::Pwm(const uint8_t ch, uint16_t duty) {
+Dm11::ErrorCode Dm11::Pwm(const uint8_t ch, uint16_t duty) {
   if (ch >= kPwmChannelNum) {
     return kInvalidParameter;
   }
@@ -38,5 +36,3 @@ I2cToPwm::ErrorCode I2cToPwm::Pwm(const uint8_t ch, uint16_t duty) {
   wire_.write(reinterpret_cast<const uint8_t*>(&duty), sizeof(duty));
   return static_cast<ErrorCode>(wire_.endTransmission());
 }
-
-}  // namespace em
