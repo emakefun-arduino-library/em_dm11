@@ -2,8 +2,8 @@
 
 ## API Function
 
-<https://emakefun-arduino-library.github.io/em_i2c_to_pwm/classem_1_1_i2c_to_pwm.html>
+<https://emakefun-arduino-library.github.io/dm11/class_dm11.html>
 
 ## Example
 
-<https://emakefun-arduino-library.github.io/em_i2c_to_pwm/i2c_to_pwm_8ino-example.html>
+<https://emakefun-arduino-library.github.io/dm11/dm11_8ino-example.html>
