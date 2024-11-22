@@ -1,7 +1,3 @@
-/**
- * @example dm11.ino
- */
-
 #include "dm11.h"
 
 namespace {
