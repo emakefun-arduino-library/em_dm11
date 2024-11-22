@@ -107,9 +107,9 @@ $(function(){ initResizable(false); });
 <div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> ret = g_dm11.Init();</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (<a id="a2" name="a2"></a><a class="code hl_enumvalue" href="class_dm11.html#a861db6d0efad1e3de1a63a8fe7079d72a993a0cf217767281fa6802b52cd9acc2">Dm11::kOK</a> == ret) {</div>
-<div class="line">    Serial.println(<span class="stringliteral">&quot;i2c to pwm initialization successful&quot;</span>);</div>
+<div class="line">    Serial.println(<span class="stringliteral">&quot;dm11 initialization successful&quot;</span>);</div>
 <div class="line">  } <span class="keywordflow">else</span> {</div>
-<div class="line">    Serial.print(<span class="stringliteral">&quot;i2c to pwm initialization failed: &quot;</span>);</div>
+<div class="line">    Serial.print(<span class="stringliteral">&quot;dm11 initialization failed: &quot;</span>);</div>
 <div class="line">    Serial.println(ret);</div>
 <div class="line">    <span class="keywordflow">while</span> (<span class="keyword">true</span>);</div>
 <div class="line">  }</div>
@@ -122,14 +122,14 @@ $(function(){ initResizable(false); });
 <div class="line">  g_dm11.Pwm(1, 4095);</div>
 <div class="line">  g_dm11.Pwm(2, 0);</div>
 <div class="line">  g_dm11.Pwm(3, 4095);</div>
-<div class="line">  Serial.println(<span class="stringliteral">&quot;F&quot;</span>);</div>
+<div class="line">  Serial.println(<span class="stringliteral">&quot;motor forward&quot;</span>);</div>
 <div class="line">  delay(1000);</div>
 <div class="line"> </div>
 <div class="line">  g_dm11.Pwm(0, 4095);</div>
 <div class="line">  g_dm11.Pwm(1, 0);</div>
 <div class="line">  g_dm11.Pwm(2, 4095);</div>
 <div class="line">  g_dm11.Pwm(3, 0);</div>
-<div class="line">  Serial.println(<span class="stringliteral">&quot;B&quot;</span>);</div>
+<div class="line">  Serial.println(<span class="stringliteral">&quot;motor backward&quot;</span>);</div>
 <div class="line">  delay(1000);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclass_dm11_html"><div class="ttname"><a href="class_dm11.html">Dm11</a></div><div class="ttdef"><b>定义</b> dm11.h:10</div></div>
