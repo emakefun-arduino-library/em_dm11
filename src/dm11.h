@@ -118,81 +118,81 @@ class Dm11 {
   enum ErrorCode : uint32_t {
     /**
      * @~Chinese
-     * @brief 0：成功。
+     * @brief 成功。
      */
     /**
      * @~English
-     * @brief 0: Success.
+     * @brief Success.
      */
     kOK = 0,
 
     /**
      * @~Chinese
-     * @brief 1：I2C数据太长，无法装入传输缓冲区。
+     * @brief I2C数据太长，无法装入传输缓冲区。
      */
     /**
      * @~English
-     * @brief 1: I2C data too long to fit in transmit buffer.
+     * @brief I2C data too long to fit in transmit buffer.
      */
     kI2cDataTooLongToFitInTransmitBuffer = 1,
 
     /**
      * @~Chinese
-     * @brief 2：在I2C发送地址时收到NACK。
+     * @brief 在I2C发送地址时收到NACK。
      */
     /**
      * @~English
-     * @brief 2: NACK received on I2C transmit of address.
+     * @brief NACK received on I2C transmit of address.
      */
     kI2cReceivedNackOnTransmitOfAddress = 2,
 
     /**
      * @~Chinese
-     * @brief 3：在I2C发送数据时收到NACK。
+     * @brief 在I2C发送数据时收到NACK。
      */
     /**
      * @~English
-     * @brief 3: NACK received on I2C transmit of data.
+     * @brief NACK received on I2C transmit of data.
      */
     kI2cReceivedNackOnTransmitOfData = 3,
 
     /**
      * @~Chinese
-     * @brief 4：其他I2C错误。
+     * @brief 其他I2C错误。
      */
     /**
      * @~English
-     * @brief 4: Other I2C errors.
+     * @brief Other I2C errors.
      */
     kI2cOtherError = 4,
 
     /**
      * @~Chinese
-     * @brief 5：I2C通讯超时。
+     * @brief I2C通讯超时。
      */
     /**
      * @~English
-     * @brief 5: I2C communication timed out.
+     * @brief I2C communication timed out.
      */
     kI2cTimeout = 5,
 
     /**
      * @~Chinese
-     * @brief 6：参数错误。
+     * @brief 参数错误。
      */
     /**
      * @~English
-     * @brief 6: Invalid parameter.
+     * @brief Invalid parameter.
      */
     kInvalidParameter = 6,
 
     /**
      * @~Chinese
-     * @brief 7：未知错误。
+     * @brief 未知错误。
      */
     /**
      * @~English
-     * @brief 7: Unknown error.
+     * @brief Unknown error.
      */
     kUnknownError = 7,
   };
