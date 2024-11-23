@@ -3,8 +3,8 @@
  */
 #pragma once
 
-#ifndef DM11_H_
-#define DM11_H_
+#ifndef _DM11_H_
+#define _DM11_H_
 
 #include <WString.h>
 #include <Wire.h>
