@@ -14,14 +14,14 @@
  * @~Chinese
  * @class Dm11
  * @brief DM11是使用I2C协议驱动4路PWM从而驱动2路电机的模块，默认I2C地址为0x15。
- * @example motor_forward_backward.ino 电机前进与后退的示例
+ * @example motor_forward_backward.ino 电机前进与后退的示例。
  */
 /**
  * @~English
  * @class Dm11
  * @brief DM11 is a module that uses the I2C protocol to drive four PWM channels, which in turn drive two motors. The default
  * I2C address is 0x15.
- * @example motor_forward_backward.ino Example of motor forward and backward
+ * @example motor_forward_backward.ino Example of motor forward and backward.
  */
 class Dm11 {
  public:
