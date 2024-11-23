@@ -1,8 +1,6 @@
 #include "dm11.h"
 
-namespace {
-Dm11 g_dm11;
-}
+static Dm11 g_dm11;
 
 void setup() {
   Serial.begin(115200);
