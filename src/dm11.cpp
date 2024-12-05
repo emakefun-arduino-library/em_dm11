@@ -36,7 +36,7 @@ Dm11::ErrorCode Dm11::Init(const uint16_t frequency_hz) {
   return static_cast<ErrorCode>(wire_.endTransmission());
 }
 
-Dm11::ErrorCode Dm11::Pwm(const uint8_t ch, uint16_t duty) {
+Dm11::ErrorCode Dm11::PwmDuty(const uint8_t ch, uint16_t duty) {
   if (ch >= kPwmChannelNum) {
     return kInvalidParameter;
   }

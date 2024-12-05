@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pwm_0',['Pwm',['../classem_1_1_dm11.html#ac3e9e165260152c0da542c4ec7018a6c',1,'em::Dm11']]]
+  ['pwmduty_0',['PwmDuty',['../classem_1_1_dm11.html#aa2e598e2b13ffab340980fd8926350be',1,'em::Dm11']]]
 ];

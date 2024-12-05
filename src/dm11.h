@@ -267,7 +267,7 @@ class Dm11 {
    * @param[in] duty PWM duty cycle, range: 0 ~ 4095.
    * @return Return value please refer to @ref ErrorCode.
    */
-  ErrorCode Pwm(const uint8_t ch, uint16_t duty);
+  ErrorCode PwmDuty(const uint8_t ch, uint16_t duty);
 
  private:
   Dm11(const Dm11&) = delete;

@@ -23,17 +23,17 @@ void setup() {
 }
 
 void loop() {
-  g_dm11.Pwm(0, 0);
-  g_dm11.Pwm(1, 4095);
-  g_dm11.Pwm(2, 0);
-  g_dm11.Pwm(3, 4095);
+  g_dm11.PwmDuty(0, 0);
+  g_dm11.PwmDuty(1, 4095);
+  g_dm11.PwmDuty(2, 0);
+  g_dm11.PwmDuty(3, 4095);
   Serial.println("motor forward");
   delay(1000);
 
-  g_dm11.Pwm(0, 4095);
-  g_dm11.Pwm(1, 0);
-  g_dm11.Pwm(2, 4095);
-  g_dm11.Pwm(3, 0);
+  g_dm11.PwmDuty(0, 4095);
+  g_dm11.PwmDuty(1, 0);
+  g_dm11.PwmDuty(2, 4095);
+  g_dm11.PwmDuty(3, 0);
   Serial.println("motor backward");
   delay(1000);
 }

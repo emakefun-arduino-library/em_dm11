@@ -13,5 +13,5 @@ var classem_1_1_dm11 =
     [ "Dm11", "classem_1_1_dm11.html#a612627d1e1525ebbf46ec575aab220c4", null ],
     [ "Dm11", "classem_1_1_dm11.html#ab297490158beeee0f3873c730ef0d062", null ],
     [ "Init", "classem_1_1_dm11.html#a7bff176a10e5b4a401e5fa760268a9bc", null ],
-    [ "Pwm", "classem_1_1_dm11.html#ac3e9e165260152c0da542c4ec7018a6c", null ]
+    [ "PwmDuty", "classem_1_1_dm11.html#aa2e598e2b13ffab340980fd8926350be", null ]
 ];
