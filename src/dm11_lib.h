@@ -7,14 +7,6 @@
  * @file dm11_lib.h
  */
 
-/**
- * @mainpage
- * @~Chinese
- * - Github链接： https://github.com/emakefun-arduino-library/em_dm11
- * @~English
- * - Github link: https://github.com/emakefun-arduino-library/em_dm11
- */
-
 #include <WString.h>
 
 namespace em {
@@ -47,7 +39,7 @@ constexpr uint8_t kVersionMinor = 0;
  * @~English
  * @brief Patch version number.
  */
-constexpr uint8_t kVersionPatch = 1;
+constexpr uint8_t kVersionPatch = 2;
 
 /**
  * @~Chinese

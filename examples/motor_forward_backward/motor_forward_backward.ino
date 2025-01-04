@@ -1,13 +1,13 @@
 /**
  * @~Chinese
  * @file motor_forward_backward.ino
- * @brief 电机前进与后退的示例。
+ * @brief 驱动电机前进与后退的示例。
  * @example motor_forward_backward.ino
  * 电机前进与后退的示例。
  */
 
 /**
- * @English
+ * @~English
  * @file motor_forward_backward.ino
  * @brief Example of motor forward and backward.
  * @example motor_forward_backward.ino
