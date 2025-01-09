@@ -42,14 +42,14 @@ var NAVTREE =
     ] ],
     [ "示例", "examples.html", "examples" ],
     [ "下载", "usergroup0.html", [
-      [ "下载库: Emakefun_DM11_v1.0.2.zip", "../../download/Emakefun_DM11_v1.0.2.zip", null ]
+      [ "下载库: Emakefun_DM11_v1.0.3.zip", "../../download/Emakefun_DM11_v1.0.3.zip", null ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"../../download/Emakefun_DM11_v1.0.2.zip"
+"../../download/Emakefun_DM11_v1.0.3.zip"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

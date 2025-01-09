@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Emakefun DM11 Arduino 库<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">Emakefun DM11 Arduino 库<span id="projectnumber">&#160;1.0.3</span>
    </div>
   </td>
  </tr>
@@ -151,7 +151,7 @@ $(function(){initNavTree('dm11_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  duty = min(<a class="code hl_variable" href="classem_1_1_dm11.html#a5b5c5266a3ec66cc739c1716a6810567">kMaxPwmDuty</a>, duty);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  wire_.beginTransmission(i2c_address_);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  wire_.write(kMemAddrPwmDuty0 + (ch &lt;&lt; 1));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  wire_.write(kMemAddrPwmDuty0 + (((ch + 2) % <a class="code hl_variable" href="classem_1_1_dm11.html#a9f30d7929c22b31917f178503de5569a">kPwmChannelNum</a>) &lt;&lt; 1));</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  wire_.write(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>uint8_t*<span class="keyword">&gt;</span>(&amp;duty), <span class="keyword">sizeof</span>(duty));</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="classem_1_1_dm11.html#a6c38fbc3f05f23324280adb9c03b758b">ErrorCode</a><span class="keyword">&gt;</span>(wire_.endTransmission());</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>

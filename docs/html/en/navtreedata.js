@@ -41,14 +41,14 @@ var NAVTREE =
     ] ],
     [ "Examples", "examples.html", "examples" ],
     [ "Downloads", "usergroup0.html", [
-      [ "Download Library: Emakefun_DM11_v1.0.2.zip", "../../download/Emakefun_DM11_v1.0.2.zip", null ]
+      [ "Download Library: Emakefun_DM11_v1.0.3.zip", "../../download/Emakefun_DM11_v1.0.3.zip", null ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"../../download/Emakefun_DM11_v1.0.2.zip"
+"../../download/Emakefun_DM11_v1.0.3.zip"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

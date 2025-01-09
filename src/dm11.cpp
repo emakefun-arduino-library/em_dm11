@@ -45,7 +45,7 @@ Dm11::ErrorCode Dm11::PwmDuty(const uint8_t ch, uint16_t duty) {
   }
   duty = min(kMaxPwmDuty, duty);
   wire_.beginTransmission(i2c_address_);
-  wire_.write(kMemAddrPwmDuty0 + (ch << 1));
+  wire_.write(kMemAddrPwmDuty0 + (((ch + 2) % kPwmChannelNum) << 1));
   wire_.write(reinterpret_cast<const uint8_t*>(&duty), sizeof(duty));
   return static_cast<ErrorCode>(wire_.endTransmission());
 }
