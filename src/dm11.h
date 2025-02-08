@@ -67,16 +67,6 @@ class Dm11 {
 
   /**
    * @~Chinese
-   * @brief PWM通道数。
-   */
-  /**
-   * @~English
-   * @brief Number of PWM channels.
-   */
-  static constexpr uint16_t kPwmChannelNum = 4;
-
-  /**
-   * @~Chinese
    * @enum ErrorCode
    * @brief 错误码。
    */
@@ -169,6 +159,64 @@ class Dm11 {
 
   /**
    * @~Chinese
+   * @enum PwmChannel
+   * @brief PWM通道。
+   */
+  /**
+   * @~English
+   * @enum PwmChannel
+   * @brief PWM channel.
+   */
+  enum PwmChannel : uint8_t {
+    /**
+     * @~Chinese
+     * @brief PWM通道0。
+     */
+    /**
+     * @~English
+     * @brief PWM channel 0.
+     */
+    kPwmChannel0 = 0,
+    /**
+     * @~Chinese
+     * @brief PWM通道1。
+     */
+    /**
+     * @~English
+     * @brief PWM channel 1.
+     */
+    kPwmChannel1 = 1,
+    /**
+     * @~Chinese
+     * @brief PWM通道2。
+     */
+    /**
+     * @~English
+     * @brief PWM channel 2.
+     */
+    kPwmChannel2 = 2,
+    /**
+     * @~Chinese
+     * @brief PWM通道3。
+     */
+    /**
+     * @~English
+     * @brief PWM channel 3.
+     */
+    kPwmChannel3 = 3,
+    /**
+     * @~Chinese
+     * @brief PWM通道数。
+     */
+    /**
+     * @~English
+     * @brief PWM channel 4.
+     */
+    kPwmChannelNum = 4,
+  };
+
+  /**
+   * @~Chinese
    * @brief 构造函数，指定 I2C 地址和 TwoWire 对象。
    * @param i2c_address I2C 地址，默认为 @ref kDefaultI2cAddress 。
    * @param wire TwoWire 对象引用，默认为 Wire。
@@ -211,18 +259,18 @@ class Dm11 {
   /**
    * @~Chinese
    * @brief 设置指定通道的 PWM 占空比。
-   * @param[in] ch PWM通道，范围：0 ~ 3。
+   * @param[in] pwm_channel PWM通道，参考 @ref PwmChannel
    * @param[in] duty PWM占空比，范围：0 ~ 4095。
    * @return 返回值请参考 @ref ErrorCode 。
    */
   /**
    * @~English
    * @brief Set the PWM duty cycle for a specified channel.
-   * @param[in] ch PWM channel, range: 0 ~ 3.
+   * @param[in] pwm_channel PWM channel, @ref PwmChannel
    * @param[in] duty PWM duty cycle, range: 0 ~ 4095.
    * @return Return value please refer to @ref ErrorCode.
    */
-  ErrorCode PwmDuty(const uint8_t ch, uint16_t duty);
+  ErrorCode PwmDuty(const PwmChannel pwm_channel, uint16_t duty);
 
  private:
   Dm11(const Dm11&) = delete;

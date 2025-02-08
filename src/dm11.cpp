@@ -39,13 +39,13 @@ Dm11::ErrorCode Dm11::Init(const uint16_t frequency_hz) {
   return static_cast<ErrorCode>(wire_.endTransmission());
 }
 
-Dm11::ErrorCode Dm11::PwmDuty(const uint8_t ch, uint16_t duty) {
-  if (ch >= kPwmChannelNum) {
+Dm11::ErrorCode Dm11::PwmDuty(const PwmChannel pwm_channel, uint16_t duty) {
+  if (pwm_channel >= kPwmChannelNum) {
     return kInvalidParameter;
   }
   duty = min(kMaxPwmDuty, duty);
   wire_.beginTransmission(i2c_address_);
-  wire_.write(kMemAddrPwmDuty0 + (((ch + 2) % kPwmChannelNum) << 1));
+  wire_.write(kMemAddrPwmDuty0 + (((pwm_channel + 2) % kPwmChannelNum) << 1));
   wire_.write(reinterpret_cast<const uint8_t*>(&duty), sizeof(duty));
   return static_cast<ErrorCode>(wire_.endTransmission());
 }

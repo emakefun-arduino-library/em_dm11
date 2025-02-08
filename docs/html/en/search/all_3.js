@@ -11,9 +11,13 @@ var searchData=
   ['kmaxpwmduty_8',['kMaxPwmDuty',['../classem_1_1_dm11.html#a5b5c5266a3ec66cc739c1716a6810567',1,'em::Dm11']]],
   ['kminfrequencyhz_9',['kMinFrequencyHz',['../classem_1_1_dm11.html#a63aaea1d79f4675501bef6cda73bfc0e',1,'em::Dm11']]],
   ['kok_10',['kOK',['../classem_1_1_dm11.html#a6c38fbc3f05f23324280adb9c03b758ba4852a89aec1e3bb7cb9215476e5acbbe',1,'em::Dm11']]],
-  ['kpwmchannelnum_11',['kPwmChannelNum',['../classem_1_1_dm11.html#a9f30d7929c22b31917f178503de5569a',1,'em::Dm11']]],
-  ['kunknownerror_12',['kUnknownError',['../classem_1_1_dm11.html#a6c38fbc3f05f23324280adb9c03b758ba8501e0dc1617fbc0d11b23ef7e729cd8',1,'em::Dm11']]],
-  ['kversionmajor_13',['kVersionMajor',['../dm11__lib_8h.html#a0dda9954294bead6640bbd98925f405a',1,'em::dm11_lib']]],
-  ['kversionminor_14',['kVersionMinor',['../dm11__lib_8h.html#acb204ad97ea2100694d1f755869b385d',1,'em::dm11_lib']]],
-  ['kversionpatch_15',['kVersionPatch',['../dm11__lib_8h.html#a12a7bd4f4baf3f6d7840f4423655a8cf',1,'em::dm11_lib']]]
+  ['kpwmchannel0_11',['kPwmChannel0',['../classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190baa767f183b4d3e5aeab9cd2e6fba3a2b2',1,'em::Dm11']]],
+  ['kpwmchannel1_12',['kPwmChannel1',['../classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190bafb4b178d9a5d98fe582fcea4af2a3f02',1,'em::Dm11']]],
+  ['kpwmchannel2_13',['kPwmChannel2',['../classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190ba8660160742c0acd43a35d762bc8f9741',1,'em::Dm11']]],
+  ['kpwmchannel3_14',['kPwmChannel3',['../classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190bac04d1d96acaa61d16246d4305f414607',1,'em::Dm11']]],
+  ['kpwmchannelnum_15',['kPwmChannelNum',['../classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190ba58ae55e02bc2d4ce809121009938d258',1,'em::Dm11']]],
+  ['kunknownerror_16',['kUnknownError',['../classem_1_1_dm11.html#a6c38fbc3f05f23324280adb9c03b758ba8501e0dc1617fbc0d11b23ef7e729cd8',1,'em::Dm11']]],
+  ['kversionmajor_17',['kVersionMajor',['../dm11__lib_8h.html#a0dda9954294bead6640bbd98925f405a',1,'em::dm11_lib']]],
+  ['kversionminor_18',['kVersionMinor',['../dm11__lib_8h.html#acb204ad97ea2100694d1f755869b385d',1,'em::dm11_lib']]],
+  ['kversionpatch_19',['kVersionPatch',['../dm11__lib_8h.html#a12a7bd4f4baf3f6d7840f4423655a8cf',1,'em::dm11_lib']]]
 ];

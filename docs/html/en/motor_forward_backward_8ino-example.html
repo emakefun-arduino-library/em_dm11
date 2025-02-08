@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Emakefun DM11 Arduino Lib<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Emakefun DM11 Arduino Lib<span id="projectnumber">&#160;1.0.4</span>
    </div>
   </td>
  </tr>
@@ -144,22 +144,26 @@ $(function(){initNavTree('motor_forward_backward_8ino-example.html',''); initRes
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  g_dm11.PwmDuty(0, 0);</div>
-<div class="line">  g_dm11.PwmDuty(1, 4095);</div>
-<div class="line">  g_dm11.PwmDuty(2, 0);</div>
-<div class="line">  g_dm11.PwmDuty(3, 4095);</div>
+<div class="line">  g_dm11.PwmDuty(<a class="code hl_enumvalue" href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190baa767f183b4d3e5aeab9cd2e6fba3a2b2">em::Dm11::kPwmChannel0</a>, 0);</div>
+<div class="line">  g_dm11.PwmDuty(<a class="code hl_enumvalue" href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190bafb4b178d9a5d98fe582fcea4af2a3f02">em::Dm11::kPwmChannel1</a>, 4095);</div>
+<div class="line">  g_dm11.PwmDuty(<a class="code hl_enumvalue" href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190ba8660160742c0acd43a35d762bc8f9741">em::Dm11::kPwmChannel2</a>, 0);</div>
+<div class="line">  g_dm11.PwmDuty(<a class="code hl_enumvalue" href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190bac04d1d96acaa61d16246d4305f414607">em::Dm11::kPwmChannel3</a>, 4095);</div>
 <div class="line">  Serial.println(<span class="stringliteral">&quot;motor forward&quot;</span>);</div>
 <div class="line">  delay(1000);</div>
 <div class="line"> </div>
-<div class="line">  g_dm11.PwmDuty(0, 4095);</div>
-<div class="line">  g_dm11.PwmDuty(1, 0);</div>
-<div class="line">  g_dm11.PwmDuty(2, 4095);</div>
-<div class="line">  g_dm11.PwmDuty(3, 0);</div>
+<div class="line">  g_dm11.PwmDuty(<a class="code hl_enumvalue" href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190baa767f183b4d3e5aeab9cd2e6fba3a2b2">em::Dm11::kPwmChannel0</a>, 4095);</div>
+<div class="line">  g_dm11.PwmDuty(<a class="code hl_enumvalue" href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190bafb4b178d9a5d98fe582fcea4af2a3f02">em::Dm11::kPwmChannel1</a>, 0);</div>
+<div class="line">  g_dm11.PwmDuty(<a class="code hl_enumvalue" href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190ba8660160742c0acd43a35d762bc8f9741">em::Dm11::kPwmChannel2</a>, 4095);</div>
+<div class="line">  g_dm11.PwmDuty(<a class="code hl_enumvalue" href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190bac04d1d96acaa61d16246d4305f414607">em::Dm11::kPwmChannel3</a>, 0);</div>
 <div class="line">  Serial.println(<span class="stringliteral">&quot;motor backward&quot;</span>);</div>
 <div class="line">  delay(1000);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassem_1_1_dm11_html"><div class="ttname"><a href="classem_1_1_dm11.html">em::Dm11</a></div><div class="ttdoc">DM11 is a module that uses the I2C protocol to drive four PWM channels, which in turn drive two motor...</div><div class="ttdef"><b>Definition</b> <a href="dm11_8h_source.html#l00026">dm11.h:26</a></div></div>
-<div class="ttc" id="aclassem_1_1_dm11_html_a6c38fbc3f05f23324280adb9c03b758ba4852a89aec1e3bb7cb9215476e5acbbe"><div class="ttname"><a href="classem_1_1_dm11.html#a6c38fbc3f05f23324280adb9c03b758ba4852a89aec1e3bb7cb9215476e5acbbe">em::Dm11::kOK</a></div><div class="ttdeci">@ kOK</div><div class="ttdoc">Success.</div><div class="ttdef"><b>Definition</b> <a href="dm11_8h_source.html#l00097">dm11.h:97</a></div></div>
+<div class="ttc" id="aclassem_1_1_dm11_html_a4d9c4415733a8b319000a708084c190ba8660160742c0acd43a35d762bc8f9741"><div class="ttname"><a href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190ba8660160742c0acd43a35d762bc8f9741">em::Dm11::kPwmChannel2</a></div><div class="ttdeci">@ kPwmChannel2</div><div class="ttdoc">PWM channel 2.</div><div class="ttdef"><b>Definition</b> <a href="dm11_8h_source.html#l00197">dm11.h:197</a></div></div>
+<div class="ttc" id="aclassem_1_1_dm11_html_a4d9c4415733a8b319000a708084c190baa767f183b4d3e5aeab9cd2e6fba3a2b2"><div class="ttname"><a href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190baa767f183b4d3e5aeab9cd2e6fba3a2b2">em::Dm11::kPwmChannel0</a></div><div class="ttdeci">@ kPwmChannel0</div><div class="ttdoc">PWM channel 0.</div><div class="ttdef"><b>Definition</b> <a href="dm11_8h_source.html#l00179">dm11.h:179</a></div></div>
+<div class="ttc" id="aclassem_1_1_dm11_html_a4d9c4415733a8b319000a708084c190bac04d1d96acaa61d16246d4305f414607"><div class="ttname"><a href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190bac04d1d96acaa61d16246d4305f414607">em::Dm11::kPwmChannel3</a></div><div class="ttdeci">@ kPwmChannel3</div><div class="ttdoc">PWM channel 3.</div><div class="ttdef"><b>Definition</b> <a href="dm11_8h_source.html#l00206">dm11.h:206</a></div></div>
+<div class="ttc" id="aclassem_1_1_dm11_html_a4d9c4415733a8b319000a708084c190bafb4b178d9a5d98fe582fcea4af2a3f02"><div class="ttname"><a href="classem_1_1_dm11.html#a4d9c4415733a8b319000a708084c190bafb4b178d9a5d98fe582fcea4af2a3f02">em::Dm11::kPwmChannel1</a></div><div class="ttdeci">@ kPwmChannel1</div><div class="ttdoc">PWM channel 1.</div><div class="ttdef"><b>Definition</b> <a href="dm11_8h_source.html#l00188">dm11.h:188</a></div></div>
+<div class="ttc" id="aclassem_1_1_dm11_html_a6c38fbc3f05f23324280adb9c03b758ba4852a89aec1e3bb7cb9215476e5acbbe"><div class="ttname"><a href="classem_1_1_dm11.html#a6c38fbc3f05f23324280adb9c03b758ba4852a89aec1e3bb7cb9215476e5acbbe">em::Dm11::kOK</a></div><div class="ttdeci">@ kOK</div><div class="ttdoc">Success.</div><div class="ttdef"><b>Definition</b> <a href="dm11_8h_source.html#l00087">dm11.h:87</a></div></div>
 <div class="ttc" id="aclassem_1_1_dm11_html_a7bff176a10e5b4a401e5fa760268a9bc"><div class="ttname"><a href="classem_1_1_dm11.html#a7bff176a10e5b4a401e5fa760268a9bc">em::Dm11::Init</a></div><div class="ttdeci">ErrorCode Init(const uint16_t frequency_hz=1000)</div><div class="ttdoc">Initialization function.</div><div class="ttdef"><b>Definition</b> <a href="dm11_8cpp_source.html#l00022">dm11.cpp:22</a></div></div>
 <div class="ttc" id="adm11_8h_html"><div class="ttname"><a href="dm11_8h.html">dm11.h</a></div></div>
 <div class="ttc" id="adm11__lib_8h_html"><div class="ttname"><a href="dm11__lib_8h.html">dm11_lib.h</a></div></div>

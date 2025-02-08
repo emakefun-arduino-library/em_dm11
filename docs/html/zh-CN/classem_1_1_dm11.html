@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Emakefun DM11 Arduino 库<span id="projectnumber">&#160;1.0.3</span>
+   <div id="projectname">Emakefun DM11 Arduino 库<span id="projectnumber">&#160;1.0.4</span>
    </div>
   </td>
  </tr>
@@ -126,6 +126,17 @@ Public 类型</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a6c38fbc3f05f23324280adb9c03b758b"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误码。  <a href="#a6c38fbc3f05f23324280adb9c03b758b">更多...</a><br /></td></tr>
 <tr class="separator:a6c38fbc3f05f23324280adb9c03b758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9c4415733a8b319000a708084c190b" id="r_a4d9c4415733a8b319000a708084c190b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d9c4415733a8b319000a708084c190b">PwmChannel</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="#a4d9c4415733a8b319000a708084c190baa767f183b4d3e5aeab9cd2e6fba3a2b2">kPwmChannel0</a> = 0
+, <a class="el" href="#a4d9c4415733a8b319000a708084c190bafb4b178d9a5d98fe582fcea4af2a3f02">kPwmChannel1</a> = 1
+, <a class="el" href="#a4d9c4415733a8b319000a708084c190ba8660160742c0acd43a35d762bc8f9741">kPwmChannel2</a> = 2
+, <a class="el" href="#a4d9c4415733a8b319000a708084c190bac04d1d96acaa61d16246d4305f414607">kPwmChannel3</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a4d9c4415733a8b319000a708084c190ba58ae55e02bc2d4ce809121009938d258">kPwmChannelNum</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:a4d9c4415733a8b319000a708084c190b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM通道。  <a href="#a4d9c4415733a8b319000a708084c190b">更多...</a><br /></td></tr>
+<tr class="separator:a4d9c4415733a8b319000a708084c190b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
@@ -138,9 +149,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a7bff176a10e5b4a401e5fa760268a9bc" id="r_a7bff176a10e5b4a401e5fa760268a9bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a6c38fbc3f05f23324280adb9c03b758b">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bff176a10e5b4a401e5fa760268a9bc">Init</a> (const uint16_t frequency_hz=1000)</td></tr>
 <tr class="memdesc:a7bff176a10e5b4a401e5fa760268a9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化函数。  <br /></td></tr>
 <tr class="separator:a7bff176a10e5b4a401e5fa760268a9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2e598e2b13ffab340980fd8926350be" id="r_aa2e598e2b13ffab340980fd8926350be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a6c38fbc3f05f23324280adb9c03b758b">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2e598e2b13ffab340980fd8926350be">PwmDuty</a> (const uint8_t ch, uint16_t duty)</td></tr>
-<tr class="memdesc:aa2e598e2b13ffab340980fd8926350be"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置指定通道的 PWM 占空比。  <br /></td></tr>
-<tr class="separator:aa2e598e2b13ffab340980fd8926350be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7051afaf18492fc88e7e5b638ee9d22a" id="r_a7051afaf18492fc88e7e5b638ee9d22a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a6c38fbc3f05f23324280adb9c03b758b">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7051afaf18492fc88e7e5b638ee9d22a">PwmDuty</a> (const <a class="el" href="#a4d9c4415733a8b319000a708084c190b">PwmChannel</a> pwm_channel, uint16_t duty)</td></tr>
+<tr class="memdesc:a7051afaf18492fc88e7e5b638ee9d22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置指定通道的 PWM 占空比。  <br /></td></tr>
+<tr class="separator:a7051afaf18492fc88e7e5b638ee9d22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 静态 Public 属性</h2></td></tr>
@@ -156,9 +167,6 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a5b5c5266a3ec66cc739c1716a6810567" id="r_a5b5c5266a3ec66cc739c1716a6810567"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b5c5266a3ec66cc739c1716a6810567">kMaxPwmDuty</a> = 4095</td></tr>
 <tr class="memdesc:a5b5c5266a3ec66cc739c1716a6810567"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大PWM占空比。  <br /></td></tr>
 <tr class="separator:a5b5c5266a3ec66cc739c1716a6810567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f30d7929c22b31917f178503de5569a" id="r_a9f30d7929c22b31917f178503de5569a"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f30d7929c22b31917f178503de5569a">kPwmChannelNum</a> = 4</td></tr>
-<tr class="memdesc:a9f30d7929c22b31917f178503de5569a"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM通道数。  <br /></td></tr>
-<tr class="separator:a9f30d7929c22b31917f178503de5569a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>DM11是使用I2C协议驱动4路PWM从而驱动2路电机的模块，默认I2C地址为0x15。 </p>
@@ -199,7 +207,37 @@ Public 成员函数</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">在文件 <a class="el" href="dm11_8h_source.html">dm11.h</a> 第 <a class="el" href="dm11_8h_source.html#l00088">88</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dm11_8h_source.html">dm11.h</a> 第 <a class="el" href="dm11_8h_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4d9c4415733a8b319000a708084c190b" name="a4d9c4415733a8b319000a708084c190b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9c4415733a8b319000a708084c190b">&#9670;&#160;</a></span>PwmChannel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a4d9c4415733a8b319000a708084c190b">em::Dm11::PwmChannel</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PWM通道。 </p>
+<table class="fieldtable">
+<tr><th colspan="3">枚举值</th></tr><tr><td class="fieldname"><a id="a4d9c4415733a8b319000a708084c190baa767f183b4d3e5aeab9cd2e6fba3a2b2" name="a4d9c4415733a8b319000a708084c190baa767f183b4d3e5aeab9cd2e6fba3a2b2"></a>kPwmChannel0&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>PWM通道0。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4d9c4415733a8b319000a708084c190bafb4b178d9a5d98fe582fcea4af2a3f02" name="a4d9c4415733a8b319000a708084c190bafb4b178d9a5d98fe582fcea4af2a3f02"></a>kPwmChannel1&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>PWM通道1。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4d9c4415733a8b319000a708084c190ba8660160742c0acd43a35d762bc8f9741" name="a4d9c4415733a8b319000a708084c190ba8660160742c0acd43a35d762bc8f9741"></a>kPwmChannel2&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>PWM通道2。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4d9c4415733a8b319000a708084c190bac04d1d96acaa61d16246d4305f414607" name="a4d9c4415733a8b319000a708084c190bac04d1d96acaa61d16246d4305f414607"></a>kPwmChannel3&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>PWM通道3。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4d9c4415733a8b319000a708084c190ba58ae55e02bc2d4ce809121009938d258" name="a4d9c4415733a8b319000a708084c190ba58ae55e02bc2d4ce809121009938d258"></a>kPwmChannelNum&#160;</td><td class="fieldinit">4&#160;</td><td class="fielddoc"><p>PWM通道数。 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="dm11_8h_source.html">dm11.h</a> 第 <a class="el" href="dm11_8h_source.html#l00170">170</a> 行定义.</p>
 
 </div>
 </div>
@@ -275,7 +313,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dm11_8h_source.html">dm11.h</a> 第 <a class="el" href="dm11_8h_source.html#l00194">194</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dm11_8h_source.html">dm11.h</a> 第 <a class="el" href="dm11_8h_source.html#l00242">242</a> 行定义.</p>
 
 </div>
 </div>
@@ -310,8 +348,8 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="aa2e598e2b13ffab340980fd8926350be" name="aa2e598e2b13ffab340980fd8926350be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2e598e2b13ffab340980fd8926350be">&#9670;&#160;</a></span>PwmDuty()</h2>
+<a id="a7051afaf18492fc88e7e5b638ee9d22a" name="a7051afaf18492fc88e7e5b638ee9d22a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7051afaf18492fc88e7e5b638ee9d22a">&#9670;&#160;</a></span>PwmDuty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +357,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a6c38fbc3f05f23324280adb9c03b758b">Dm11::ErrorCode</a> em::Dm11::PwmDuty </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>ch</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="#a4d9c4415733a8b319000a708084c190b">PwmChannel</a></td>          <td class="paramname"><span class="paramname"><em>pwm_channel</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -332,7 +370,7 @@ Public 成员函数</h2></td></tr>
 <p>设置指定通道的 PWM 占空比。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>PWM通道，范围：0 ~ 3。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwm_channel</td><td>PWM通道，参考 <a class="el" href="#a4d9c4415733a8b319000a708084c190b">PwmChannel</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">duty</td><td>PWM占空比，范围：0 ~ 4095。 </td></tr>
   </table>
   </dd>
@@ -445,32 +483,6 @@ Public 成员函数</h2></td></tr>
 <p>最小PWM波频率。 </p>
 
 <p class="definition">在文件 <a class="el" href="dm11_8h_source.html">dm11.h</a> 第 <a class="el" href="dm11_8h_source.html#l00046">46</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a9f30d7929c22b31917f178503de5569a" name="a9f30d7929c22b31917f178503de5569a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f30d7929c22b31917f178503de5569a">&#9670;&#160;</a></span>kPwmChannelNum</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t em::Dm11::kPwmChannelNum = 4</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>PWM通道数。 </p>
-
-<p class="definition">在文件 <a class="el" href="dm11_8h_source.html">dm11.h</a> 第 <a class="el" href="dm11_8h_source.html#l00076">76</a> 行定义.</p>
 
 </div>
 </div>
